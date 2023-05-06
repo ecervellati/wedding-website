@@ -25,7 +25,7 @@
     /* Center the background image */
     background-position: center;
     /* Scale and zoom in the image */
-    background-size: cover;
+    background-size: auto auto;
     /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
     position: relative;
     /* Add a white text color to all elements inside the .bgimg container */
