@@ -1,25 +1,81 @@
- /* Set height to 100% for body and html to enable the background image to cover the whole page: */
- /*head, html {
-    background-image: url('border11.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1000px 800px;
-    background-position: left;
- }*/
+html {
+  height: 100%;
+  background-image:    url(background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
- html {
-    height: 100%;
-    background-image:    url(background.svg);
+body, html {
+  
+  margin: 0;
+}
+
+#stylebody {
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: auto auto;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: black;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+  margin-top: 300px;
+}
+
+.middle {
+  /*background-color: rgb(238, 210, 214);
+  opacity: 0.2;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px;
+  font-size: 50px;
+}
+
+#countdown {
+  position: absolute;
+  left: 23.4%;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+} 
+
+@media screen and (max-width: 915px){
+  html {
+    height:100%;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(background_360_800.svg);
     background-repeat: no-repeat;
     background-size: cover;
- }
- 
- body, html {
+    background-position-y: center;
+    background-position-x: center;
+    display:block;
+    flex-basis: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0%;
     
-    margin: 0;
-}
+  }
   
-.bgimg {
+  body, html {
+    display: block;
+    margin: 0;
+  }
+
+  #stylebody {
     /* Full-screen */
     height: 100%;
     /* Center the background image */
@@ -33,50 +89,44 @@
     /* Add a font */
     font-family: "Courier New", Courier, monospace;
     /* Set the font-size to 25 pixels */
-    font-size: 25px;
-    margin-top: 300px;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-right: 30px;
+    
   }
   
-  /* Position text in the top-left corner */
-  .topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the bottom-left corner */
-  .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-  }
-  
-  /* Position text in the middle */
-
-  .textcss {
-    text-align: center;
-    color: black;
-  }
   .middle {
-    /*background-color: rgb(238, 210, 214);
-    opacity: 0.2;*/
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     padding: 100px;
-    font-size: 50px;
+    font-size: 30px;
+    white-space: nowrap;
+    
+  }
+  #header {
+    margin-left: 60px;
   }
 
   #countdown {
     position: absolute;
     left: 23.4%;
     margin-top: 25px;
-    margin-left: 15px;
+    margin-left: 30px;
   }
-  
+
   /* Style the <hr> element */
   hr {
-    margin: auto;
+    margin-left: 110px;
     width: 40%;
   } 
+
+  #hiddenDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
