@@ -3,6 +3,13 @@ html {
   background-image:    url(background.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  display:block;
+  flex-basis: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0%;
 }
 
 body, html {
